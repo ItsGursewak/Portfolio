@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+section{
+  padding: 60px 20px;
+}
+
+.hero{
+  height: 100vh;
+  background: black;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1{
+  font-size: 48px;
+}
+
+.hero button{
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.skills{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-box{
+  background: lightgray;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.project-card{
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea{
+  padding: 10px;
+}
+
+footer{
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media(max-width:768px){
+
+  .hero h1{
+    font-size: 32px;
+  }
+
+  .skills{
+    flex-direction: column;
+  }
+
+}
